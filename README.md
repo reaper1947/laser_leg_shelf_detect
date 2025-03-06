@@ -4,7 +4,6 @@ use Lidar2D for detect shelf by intensity and use movebase to move your robot to
 ## HOW TO USE
 ```bash
 ros launch laser_leg_shelf_detect lidar_inten.launch
-```bash
 
 ## algorithms
 - DBSCAN
