@@ -1,0 +1,6 @@
+<launch>
+<node pkg="laser_filters" type="scan_to_scan_filter_chain" output="screen" name="laser_filter">
+      <remap from="/lds1/scan_raw" to="base_scan" />
+      <rosparam command="load" file="$(find lidar_inten_detect)/config/median_filter_example.yaml" />
+</node>
+</launch>

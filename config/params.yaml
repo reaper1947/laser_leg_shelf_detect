@@ -1,0 +1,14 @@
+
+distance_calculator:
+  ros__parameters:
+    # shape: "cylinder"   # square หรือ cylinder
+    proximity_threshold: 0.03
+    intensity_threshold: 140
+    min_distance: 0.60
+    max_distance: 0.65
+    offset_length: 0.64
+    offset_standby: 1.0
+    x_min: -0.3
+    x_max: -1.25
+    y_min: -0.5
+    y_max: 0.5

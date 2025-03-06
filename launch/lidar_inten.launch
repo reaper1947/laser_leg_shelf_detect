@@ -1,0 +1,8 @@
+<launch>
+    <env name="ROS_MASTER_URI" value="http://192.168.10.100:11311" />
+    <!-- Launch the distance_calculator node -->
+    <node name="distance_calculator" pkg="lidar_inten_detect" type="$(find lidar_inten_detect)/src/lidar_best.py" output="screen">
+        <!-- Load parameters from the config folder -->
+        <!-- <rosparam file="$(find lidar_inten_detect)/config/params2.yaml" /> -->
+    </node>
+</launch>

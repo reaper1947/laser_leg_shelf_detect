@@ -1,0 +1,6 @@
+distance_calculator:
+  ros__parameters:
+    shelf_width: 0.60
+    shelf_width_tolerance: 0.10
+    intensity_threshold: 35
+    eps: 10

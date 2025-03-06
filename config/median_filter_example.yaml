@@ -1,0 +1,54 @@
+scan_filter_chain:
+- name: intensity
+  type: laser_filters/LaserScanIntensityFilter
+  params:
+    lower_threshold: 130
+    upper_threshold: 150
+    disp_histogram: 0
+
+- name: mask
+  type: laser_filters/LaserScanMaskFilter
+  params:
+    masks:
+      laser:
+      - 100
+      - 101
+      - 102
+      - 103
+      - 104
+      - 1000
+      - 1001
+      - 1002
+      laser2: []
+
+- name: box_filter
+  type: laser_filters/LaserScanBoxFilter
+  params:
+    box_frame: map
+    max_x: 2.0
+    max_y: 1.5
+    max_z: 1.00
+    min_x: 0
+    min_y: -1.5
+    min_z: -1.00
+    invert: true
+    # filter1:
+    #   name: box_filter
+    #   type: laser_filters/LaserScanBoxFilter
+    #   params:
+    #     box_frame: lidar_merged_link
+    #     ## sick
+    #     # max_x: 0.4
+    #     # max_y: 1.3
+    #     # max_z: 0.4
+    #     # min_x: -1.2
+    #     # min_y: -1.3
+    #     # min_z: -0.4
+    #     ## s2e
+    #     max_x: 2.1
+    #     max_y: 1.3
+    #     max_z: 0.4
+    #     min_x: -0.2
+    #     min_y: -1.3
+    #     min_z: -0.4
+    #     invert: false
