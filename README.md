@@ -15,6 +15,6 @@ ros launch laser_leg_shelf_detect lidar_inten.launch
 - detect 2 leg, detect front leg of shelf then pub offset leg with length param then pub Marker and pub TF centroid same detect 4 leg.
 - parameter can set on rqt_reconfigure and change or save on code lidar_best.py
 - moveBase can use when centroid has pub and you can send state true on /tick  by topic pub.
-
+  
 ## lidar
 - RPLIDAR LPX-T1
